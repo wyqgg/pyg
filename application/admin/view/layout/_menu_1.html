@@ -1,0 +1,27 @@
+ <div class="layui-side layui-bg-black" style="backgroud-color:#009688;">
+    <div class="layui-side-scroll" >
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul style="margin-top:60px" class="layui-nav layui-nav-tree"   lay-filter="test">
+       {foreach $nav as $k => $nav_one}
+	     {foreach $nav_one['son'] as $kk=>$nav_two} 
+	     <li class="layui-nav-item">
+              <a href="javascript:;">{$nav_two.auth_name}</a>
+              <dl class="layui-nav-child">
+                {foreach $nav_two['son'] as $nav_three}
+                <dd><a href="{if($nav_three['auth_c']&&$nav_three['auth_a'])}{:url($nav_three['auth_c'] . '/' . $nav_three['auth_a'])}{else/}javascript:;{/if}">{$nav_three.auth_name}</a></dd>
+                {/foreach}
+              </dl>
+            </li>
+         	{/foreach}
+		    {/foreach} 
+		</ul>
+      
+    </div>
+  </div>
+  <script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>

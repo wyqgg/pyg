@@ -1,0 +1,212 @@
+
+<title>网上书店</title>
+
+<link rel="stylesheet" type="text/css" href="/static/home/css/pages-JD-index.css" />
+<script type="text/javascript" src="/static/home/js/pages/index.js"></script>
+
+<!--列表-->
+<div class="py-container">
+	<div class="yui3-g SortList">
+		<div class="yui3-u Center banerArea">
+			<!--banner轮播-->
+			<div id="myCarousel" data-ride="carousel" data-interval="4000" class="sui-carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="active item">
+						<a href="javascript:;">
+							<img src="/static/home/img/banner1.jpg"  />
+						</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;">
+							<img src="/static/home/img/ban2.jpg"  />
+						</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;">
+							<img src="/static/home/img/ban3.png"  />
+						</a>
+
+					</div>
+				</div><a href="#myCarousel" data-slide="prev" class="carousel-control left">‹</a><a href="#myCarousel" data-slide="next" class="carousel-control right">›</a>
+			</div>
+		</div>
+		<div class="yui3-u Right">
+			<div class="news">
+				<h4><em class="fl">品优购快报</em><span class="fr tip">更多 ></span></h4>
+				<div class="clearix"></div>
+				<ul class="news-list unstyled">
+					<li>
+						<span class="bold">[特惠]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[公告]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[特惠]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[公告]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[特惠]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[特惠]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[公告]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[特惠]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[公告]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[特惠]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[公告]</span>备战开学季 全民半价购新书
+					</li>
+					<li>
+						<span class="bold">[特惠]</span>备战开学季 全民半价购新书
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 商品排行 -->
+<div class="py-container tabbox">
+	<div class="py-container tab">
+		<div class="tab-tit" style="text-align:center">
+			<a href="javascript:;" class="on">
+				<p class="img"><i></i></p>
+				<p class="text">热卖排行</p>
+			</a>
+		</div>
+
+	</div>
+	<div class="content">
+		<ul>
+			<li style="display:block;">
+			    {foreach $list as $v}
+				<div class="img-item">
+					<p class="tab-pic">
+					    <a href="{:url('home/goods/detail', ['id'=>$v.id])}"><img src="{$v.goods_logo}" /></a>
+						<!--<span><a href="javascript:;"><img src="{$v.goods_logo}"/></a></span>-->
+					</p>
+					<div class="tab-info">
+						<div class="info-title">
+							<span><a href="javascript:;">{$v.goods_name}</a></span>
+						</div>
+						<p class="info-price">价格：{$v.goods_price}</p>
+					</div>
+				</div>
+				{/foreach}
+			</li>
+			<li>
+				<div class="img-item">
+					<p class="tab-pic">
+						<span><a href="javascript:;"><img src="/static/home/img/2.jpg"/></a></span>
+					</p>
+					<div class="tab-info">
+						<div class="info-title">
+							<span><a href="javascript:;">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></span>
+						</div>
+						<p class="info-price">价格：{$v.goods_price}</p>
+					</div>
+				</div>
+				<div class="img-item">
+					<p class="tab-pic">
+						<span><a href="javascript:;"><img src="/static/home/img/1.jpg"/></a></span>
+					</p>
+					<div class="tab-info">
+						<div class="info-title">
+							<span><a href="javascript:;">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></span>
+						</div>
+						<p class="info-price">定金：¥100.00</p>
+					</div>
+				</div>
+				<div class="img-item">
+					<p class="tab-pic">
+						<span><a href="javascript:;"><img src="/static/home/img/1.jpg"/></a></span>
+					</p>
+					<div class="tab-info">
+						<div class="info-title">
+							<span><a href="javascript:;">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></span>
+						</div>
+						<p class="info-price">定金：¥100.00</p>
+					</div>
+				</div>
+				<div class="img-item">
+					<p class="tab-pic">
+						<span><a href="javascript:;"><img src="/static/home/img/2.jpg"/></a></span>
+					</p>
+					<div class="tab-info">
+						<div class="info-title">
+							<span><a href="javascript:;">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></span>
+						</div>
+						<p class="info-price">定金：¥100.00</p>
+					</div>
+				</div>
+
+			</li>
+			<li>
+				<div class="img-item">
+					<p class="tab-pic">
+						<span><a href="javascript:;"><img src="/static/home/img/1.jpg"/></a></span>
+					</p>
+					<div class="tab-info">
+						<div class="info-title">
+							<span><a href="javascript:;">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></span>
+						</div>
+						<p class="info-price">定金：¥100.00</p>
+					</div>
+				</div>
+				<div class="img-item">
+					<p class="tab-pic">
+						<span><a href="javascript:;"><img src="/static/home/img/1.jpg"/></a></span>
+					</p>
+					<div class="tab-info">
+						<div class="info-title">
+							<span><a href="javascript:;">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></span>
+						</div>
+						<p class="info-price">定金：¥100.00</p>
+					</div>
+				</div>
+				<div class="img-item">
+					<p class="tab-pic">
+						<span><a href="javascript:;"><img src="/static/home/img/1.jpg"/></a></span>
+					</p>
+					<div class="tab-info">
+						<div class="info-title">
+							<span><a href="javascript:;">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></span>
+						</div>
+						<p class="info-price">定金：¥100.00</p>
+					</div>
+				</div>
+				<div class="img-item">
+					<p class="tab-pic">
+						<span><a href="javascript:;"><img src="/static/home/img/1.jpg"/></a></span>
+					</p>
+					<div class="tab-info">
+						<div class="info-title">
+							<span><a href="javascript:;">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></span>
+						</div>
+						<p class="info-price">定金：¥100.00</p>
+					</div>
+				</div>
+
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+
+</script>

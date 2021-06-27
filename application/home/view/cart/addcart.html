@@ -1,0 +1,57 @@
+
+    <title>商品已成功加入购物车</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/home/css/pages-success-cart.css" />
+
+    <div class="success-cart">
+        <div class="py-container ">
+            <h3><i class="sui-icon icon-pc-right"></i>商品已成功加入购物车！</h3>
+            <div class="goods">
+                <div class="left-good">
+                    <div class="left-pic">
+                        <img src="{$goods['goods_logo']}">
+                        </div>
+                    <div class="right-info">
+                        <p class="title">{$goods['goods_name']}</p>
+                        <p class="attr">数量：{$number}</p>
+                    </div>
+                </div>
+                <div class="right-gocart">
+                    <a href="{:url('home/goods/detail', ['id'=>$goods.id])}" class="sui-btn btn-xlarge">查看商品详情</a>
+                    <a href="{:url('home/cart/index')}" class="sui-btn btn-xlarge btn-danger ">去购物车结算 > </a>
+                </div>
+            </div>
+		</div>
+    </div>
+
+     <div class="other-item py-container ">
+          <h4>购买该商品的朋友还购买了</h4>
+
+          <div class="banner-goods">
+              <div class="goods-list">
+                  <div id="myCarousel" data-ride="carousel" data-interval="false" class="sui-carousel slide">
+                   
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <ul class="yui3-g">
+                                {foreach $lists as $k=>$v}
+                                <li class="yui3-u-1-4">
+                                    <div class="banner-item">
+                                        <div class="p-img"><a href="#"><img src="{$v.goods_logo}"></a></div>
+                                        <div class="p-name"><a href="#">摩托罗拉 Moto Mods 摩眼-哈苏摄影模块</a></div>
+                                        <div class="p-price">￥{$v.goods_price}</div>
+                                        <div class="p-btn"><a href="{:url('home/goods/detail', ['id'=>$v.id])}" target="_blank" class="sui-btn btn-bordered  ">加入购物车</a></div>
+                                    </div>
+                                </li>
+                                {/foreach}
+                            </ul>
+                        </div>
+                    </div>
+                  
+                    </div>     
+              </div>
+          </div>
+
+     </div>
+
+
