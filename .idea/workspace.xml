@@ -162,7 +162,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="362" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1289" />
     <option name="height" value="1002" />
   </component>
@@ -204,7 +205,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="D:/phpstudy_pro/WWW/pyg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -559,7 +560,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/phpstudy_pro/WWW/pyg/.git/config">
+    <entry file="file://$PROJECT_DIR$/.git/config">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/common.php">
